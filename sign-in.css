@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+
+body{
+  background-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container .head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 50px;
+  z-index: 1000000;
+}
+
+.container .head img {
+  width: 33%;
+}
+
+.banner {
+  width: 100%;
+  height: 145vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: 1;
+  background: linear-gradient(to bottom, #000, transparent);
+}
+
+.banner:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.banner .fit {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+.banner .box {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: #000;
+  background: black;
+  opacity: 0.9;
+  border-radius: 4px;
+}
+
+.banner .box .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3.5rem 5.5rem 12rem 5.5rem;
+}
+
+.banner .box .heading h2 {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  width: 110%;
+  text-align: left;
+  padding: 1rem 0 ;
+}
+
+.banner .box .heading input{
+  font-size: 14px;
+  border: 1px solid #8c8c8c;
+  outline: none;
+  color: rgb(83, 80, 80);
+  border-radius: 2px;
+  padding: 5px 10px 5px 10px;
+  min-width: 100%;
+  height: 50px;
+  align-items: center;
+  background-color: #2c2828;
+  opacity: 1;
+}
+
+.banner .box .heading .email{
+  padding-bottom: 1rem;
+  width: 110%;
+}
+
+.banner .box .heading .password{
+  padding-bottom: 2rem;
+  width: 110%;
+}
+
+.banner .box .heading .btn {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  border-radius: 2px;
+  background: #e50914;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  font-size: 1.2rem;
+  min-width: 110%;
+  padding: 10px;
+}
+
+.banner .box .heading h5 {
+  font-size: 1rem;
+  color: rgb(155, 84, 149);
+  font-weight: 400;
+  padding: 2rem 0;
+  text-align: left;
+  text-decoration: none;
+  width: 110%;
+}
+
+.banner .box .heading h5 .signup a{
+  text-decoration: none;
+  color: #fff;
+  padding-left: 6px;
+  font-size: 1rem;
+}
+
+.banner .box .heading h5 .signup a:hover{
+  text-decoration: underline;
+}
+
+.banner .box .heading p {
+  font-size: 0.9rem;
+  width: 110%;
+  color: #8c8c8c;
+  font-weight: 500;
+  text-align: left;
+}
+
+
+/* Footer */
+
+.footer {
+  padding-top: 4rem;
+    
+}
+
+.footer a {
+  color: #8c8c8c;
+  text-decoration: none;
+}
+
+.footer a.f-1{
+  padding-left: 13rem;   
+}
+
+.footer a.f-2{
+  padding-left: 9px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  padding: 2rem 4rem 4rem ;
+  padding-left: 13rem;
+}
+
+.footer-content .one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+}
+
+.footer-content .one li {
+  padding: 7px 0;
+  
+}
+
+.footer-content .one li a {
+  color: #8c8c8c;
+  text-decoration: none;
+  }
+
+.footer-content .one li a:hover {
+  border-bottom: 1px solid #8c8c8c;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: #8c8c8c;
+}
+
+@media screen and (max-width: 1000px){
+  .footer a.f-1{
+    padding-left: 8rem;  
+  }
+
+  .footer-content {
+    padding: 2rem 4rem 4rem ;
+    padding-left: 8rem;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .container .head {
+    padding: 10px 35px;
+  }
+
+  .container .head img {
+    width: 23%;
+  }
+
+  .banner .box {
+    width: 72%;
+  }
+
+  .banner .box .heading h2 {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    width: 110%;
+  }
+
+  
+
+  .banner .box .heading h5 {
+    font-size: 1rem;
+  }
+
+  .banner .box .heading p {
+    font-size: 0.9em;
+    padding: 13px 0;
+    width: 110%;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 4rem;
+  }
+
+  .footer-content .one {
+    width: 50%;
+    padding-right: 5rem;
+  }
+
+  .footer a.f-1{
+    padding-left: 7.5rem;
+  }
+  
+
+}
+
+@media screen and (max-width: 513px) {
+
+  .banner {
+    height: 140vh;
+  }
+
+  .banner .box {
+    top: 58%;
+    left: 50%;
+  }
+
+  .container .head{
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+
+  .container .head img {
+    width: 25%;
+  }
+
+  .banner .box .heading h2 {
+    font-size: 1.8rem;
+    letter-spacing: 1.3px;
+    width: 150%;
+  }
+
+  .banner .box .heading .email{
+    padding-bottom: 1rem;
+    width: 150%;
+  }
+  .banner .box .heading input{
+    font-size: 0.88rem;
+  }
+  
+  .banner .box .heading .password{
+    width: 150%;
+  }
+
+  .banner .box .heading .btn {
+    font-size: 1.1rem;
+    min-width: 150%;
+  }
+
+  .banner .box .heading h5 {
+    font-size: 1rem;
+    width: 150%;
+  }
+
+  .banner .box .heading p {
+    font-size: 0.7rem;
+    width: 150%;
+  }
+
+  .banner .box .search input {
+    margin-bottom: 10px;
+  }
+
+  .footer-content {
+    padding-left: 0.8rem;
+  }
+
+  .footer a.f-1{
+    padding-left: 4rem;
+  }
+
+}
+
+
